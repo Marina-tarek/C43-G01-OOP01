@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Reflection;
 using common;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -21,8 +22,22 @@ namespace Assignment_OOP_1
             //}
             #endregion
 
-            #region 2 - Create an Enum called "Seas on" with the four seasons(Spring, Summer, Autumn, Winter) as its members.Write a C# program that takes a season name as input from the user and displays the corresponding month range for that season. Note range for seasons ( spring march to may , summer june to august , autumn September to November , winter December to February)
+            #region 2 - Create an Enum called "Seas on" with the four seasons(Spring, Summer, Autumn, Winter) as its members.
+            //Write a C# program that takes a season name as input from the user
+            ////and displays the corresponding month range for that season. 
+            ///Note range for seasons ( spring march to may , summer june to august , autumn September to November , winter December to February)
+  
+            //Console.WriteLine("range for seasons ( spring march to may , summer june to august , autumn September to November , winter December to February)");
+            //bool IsParsed;
+            //object Season;
+            //do
+            //{
+            //    Console.Write("please enter Season name (must start Capital letter): ");
+            //    IsParsed=Enum.TryParse(typeof(Season), Console.ReadLine(), out Season);
+            //}
+            //while (!IsParsed ||Season is null);
 
+            //Console.WriteLine(Season);
             #endregion
 
             #region 3 - Assign the following Permissions(Read, write, Delete, Execute)
