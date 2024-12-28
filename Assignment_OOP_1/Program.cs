@@ -9,9 +9,8 @@ namespace Assignment_OOP_1
     {
         static void Main(string[] args)
         {
-            //Product product= new Product();//create refrence refer to instance of product
-            //product.Id = 1;
-            //product.Count = 40;
+            bool IsParsed;
+
 
             #region  1 - Create an Enum called "WeekDays" with the days of the week(Monday to Sunday) as its members.Then, write a C# program that prints out all the days of the week using this Enum.
             //WeekDays weekDays = new WeekDays();
@@ -26,9 +25,9 @@ namespace Assignment_OOP_1
             //Write a C# program that takes a season name as input from the user
             ////and displays the corresponding month range for that season. 
             ///Note range for seasons ( spring march to may , summer june to august , autumn September to November , winter December to February)
-  
+
             //Console.WriteLine("range for seasons ( spring march to may , summer june to august , autumn September to November , winter December to February)");
-            //bool IsParsed;
+
             //object Season;
             //do
             //{
@@ -47,6 +46,20 @@ namespace Assignment_OOP_1
             #endregion
 
             #region 4.Create an Enum called "Colors" with the basic colors(Red, Green, Blue) as its members.Write a C# program that takes a color name as input from the user and displays a message indicating whether the input color is a primary color or not.
+            object color;
+            do
+            {
+                Console.Write("Please Enter Color Name: ");
+                IsParsed=Enum.TryParse(typeof(Colors), Console.ReadLine(), out color);
+    
+            }
+            while (!IsParsed ||color is null);
+            if (color == "Red" || color == "Green" || color == "Blue")
+            {
+                Console.WriteLine("input color is a primary color");
+            }
+            else { Console.WriteLine("input color is a Not primary  color"); }
+
             #endregion
         }
     }
